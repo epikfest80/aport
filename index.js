@@ -9,6 +9,8 @@ app.get('/', (req, res) => {
 
 app.get('/ping', (req, res) => {
   res.send('pong');
+app.get('/users', (req, res) => {
+  res.send('Users API v1');
 });
 
 app.listen(port, () => {
